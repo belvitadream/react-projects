@@ -173,6 +173,7 @@ nav {
   padding: 0.5rem 1rem;
   transition: var(--transition);
 }
+
 .links a:hover {
   background: var(--clr-primary-8);
   color: var(--clr-primary-5);
@@ -217,6 +218,7 @@ nav {
   .links a:hover {
     padding: 0;
     background: transparent;
+    background-color: none;
   }
   .social-icons {
     display: flex;

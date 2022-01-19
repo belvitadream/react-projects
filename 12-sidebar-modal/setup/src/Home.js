@@ -1,8 +1,22 @@
 import React, { useContext } from 'react'
 import { FaBars } from 'react-icons/fa'
+import { AppContext, useGlobalContext } from './context'
 
 const Home = () => {
-  return <h2>home component</h2>
+  // const data = useContext(AppContext)
+  // console.log(data)
+  // OR
+  const { openSidebar, openModal } = useGlobalContext()
+  return (
+    <main>
+      <button onClick={openSidebar} className='sidebar-toggle'>
+        <FaBars />
+      </button>
+      <button onClick={openModal} className='btn'>
+        show modal
+      </button>
+    </main>
+  )
 }
 
 export default Home

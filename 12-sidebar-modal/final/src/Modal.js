@@ -1,8 +1,8 @@
-import React from 'react';
-import { useGlobalContext } from './context';
-import { FaTimes } from 'react-icons/fa';
+import React from 'react'
+import { useGlobalContext } from './context'
+import { FaTimes } from 'react-icons/fa'
 const Modal = () => {
-  const { isModalOpen, closeModal } = useGlobalContext();
+  const { isModalOpen, closeModal } = useGlobalContext()
   return (
     <div
       className={`${
@@ -16,7 +16,7 @@ const Modal = () => {
         </button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Modal;
+export default Modal

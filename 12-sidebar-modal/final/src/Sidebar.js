@@ -1,11 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import { useGlobalContext } from './context';
-import { FaTimes } from 'react-icons/fa';
-import { social, links } from './data';
+import React from 'react'
+import logo from './logo.svg'
+import { useGlobalContext } from './context'
+import { FaTimes } from 'react-icons/fa'
+import { social, links } from './data'
 
 const Sidebar = () => {
-  const { isSidebarOpen, closeSidebar } = useGlobalContext();
+  const { isSidebarOpen, closeSidebar } = useGlobalContext()
 
   return (
     <aside className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}>
@@ -17,7 +17,7 @@ const Sidebar = () => {
       </div>
       <ul className='links'>
         {links.map((link) => {
-          const { id, url, text, icon } = link;
+          const { id, url, text, icon } = link
           return (
             <li key={id}>
               <a href={url}>
@@ -25,21 +25,21 @@ const Sidebar = () => {
                 {text}
               </a>
             </li>
-          );
+          )
         })}
       </ul>
       <ul className='social-icons'>
         {social.map((link) => {
-          const { id, url, icon } = link;
+          const { id, url, icon } = link
           return (
             <li key={id}>
               <a href={url}>{icon}</a>
             </li>
-          );
+          )
         })}
       </ul>
     </aside>
-  );
-};
+  )
+}
 
-export default Sidebar;
+export default Sidebar

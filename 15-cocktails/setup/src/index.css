@@ -5,7 +5,7 @@ Variables
 */
 :root {
   --primaryLightColor: #d4e6a5;
-  --primaryColor: #476a2e;
+  --primaryColor: #9bc77c;
   --primaryDarkColor: #c02c03;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
@@ -354,7 +354,7 @@ Cocktail
 .loader:after {
   background: transparent;
   -webkit-animation: load1 1s infinite ease-in-out;
-  animation: load1 1s infinite ease-in-out;
+  animation: load1 2s infinite ease-in-out;
   width: 1em;
   height: 4em;
 }
